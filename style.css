@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Kaikki */
+body {
+  max-width: 100vh;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+.homepage {
+  border: none;
+  font-size: 1.2em;
+  border-radius: 2px;
+}
+.homepage__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* kaikki koot sana */
+img {
+  width: 300px;
+  border-radius: 10px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin: 1em;
+}
+/* Kaikki koot matikka */
+.task {
+  font-size: 3em;
+}
+
+/*Mobile*/
+.container {
+  height: 100vh;
+  max-width: 45em;
+  background-color: rgb(221, 221, 221);
+}
+.letter {
+  border-bottom: solid 2px black;
+  margin-bottom: 0.4em;
+}
+.homepage__container--header {
+  color: rgba(226, 15, 15, 0.87);
+  margin-top: 1.5em;
+}
+.game__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 7em;
+}
+
+.etusivu__pelinappi {
+  background: rgb(0, 133, 0);
+  min-width: 9em;
+  padding: 0.5em;
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  box-shadow: 2px 4px rgba(53, 53, 53, 0.39);
+}
+.task__container,
+.img__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/*Sana peli*/
+.input__field {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  border: none;
+  border-bottom: solid 2px black;
+  width: 8em;
+  border-radius: 10px;
+  background-color: rgb(234, 234, 234);
+}
+.letter {
+  font-size: 2em;
+}
+.show_word {
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 0.5em;
+
+  color: white;
+  background-color: grey;
+  padding: 0.2em;
+}
+.nextImage--show {
+  background: green;
+
+  font-size: 2em;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 4px rgba(53, 53, 53, 0.39);
+}
+
+/* Matikka peli */
+.input__field--number {
+  font-size: 4em;
+  max-width: 0.8em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    height: 95vh;
+    max-width: 45em;
+    border-radius: 20px;
+    margin: 1.5em auto;
+    background-color: rgb(221, 221, 221);
+  }
+
+  .task__container,
+  .img__container {
+    margin: 20% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .nextImage--show {
+    background: green;
+    font-size: 3em;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px rgba(53, 53, 53, 0.39);
+  }
+
+  /* Etusivu */
+
+  .etusivu__pelinappi {
+    background: rgb(0, 133, 0);
+    min-width: 9em;
+    padding: 0.5em;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    box-shadow: 2px 4px rgba(53, 53, 53, 0.39);
+  }
+  .etusivu__pelinappi:hover {
+    background-color: rgb(0, 105, 0);
+  }
+  .homepage__container--header {
+    margin: 4em auto 3em auto;
+    font-size: 3em;
+    color: rgba(226, 15, 15, 0.87);
+  }
+
+  /* Sana peli */
+
+  .input__field {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    border-bottom: solid 2px black;
+    width: 9em;
+    border-radius: 10px;
+    background-color: rgb(234, 234, 234);
+  }
+
+  .letter {
+    font-size: 5em;
+  }
+
+  .nextImage--show:hover {
+    background-color: rgb(0, 105, 0);
+  }
+
+  /* Matikka peli */
+
+  .task__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .input__field--number {
+    font-size: 8em;
+    max-width: 0.8em;
+    text-align: center;
+    border-radius: 5px;
+  }
+}

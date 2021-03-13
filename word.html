@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Word game</title>
+  </head>
+  <body onload="startWordGame()">
+    <div class="container">
+      <input
+        class="homepage"
+        type="button"
+        onclick="location.href='./index.html'"
+        value="Etusivu"
+      />
+      <div class="img__container">
+        <h2>Kirjoita sana</h2>
+        <img src="./images/Kumiankka.jpg" alt="ANKKA" id="image" />
+        <div>
+        <button onclick="giveLetter('letter')" id="give_letter" class="show_word">Anna kirjain</button>
+        <button onclick="showWord('show')" id="show_word" class="show_word">Anna sana</button>
+      </div>
+        <div class="text-container">
+          <span id="game_over" class="letter"></span>
+          <span id="letter" class="letter"></span>
+          <input
+            type="text"
+            id="input-letter"
+            class="input__field"
+            onkeyup="Write()"
+          />
+        </div>
+        <button onclick="nextImg('next')" class="nextImage--show">
+          Oikein!</br>-->
+        </button>
+      </div>
+    </div>
+    <script src="word.js"></script>
+  </body>
+</html>

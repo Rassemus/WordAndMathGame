@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Math game</title>
+  </head>
+  <body onload="startMathGame()">
+    <div class="container">
+      <input
+        class="homepage"
+        type="button"
+        onclick="location.href='./index.html'"
+        value="Etusivu"
+      />
+      <div class="task__container">
+        <img src="" alt="" class="task__img">
+         <span class="task"></span>
+        <input
+          type="text"
+          id="input-number"
+          class="input__field--number"
+          onkeyup="writeAnswer()"
+        />
+        <button onclick="giveAnswer()" id="give_answer">Anna vastaus</button>
+          <button onclick="nextTask('next')" class="nextImage--show" id="task_button">
+            Oikein!</br> -->
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="math.js"></script>
+  </body>
+</html>
